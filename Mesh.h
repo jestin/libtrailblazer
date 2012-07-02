@@ -4,6 +4,8 @@
 #include <vector>
 #include "Facet.h"
 
+using std::vector;
+
 class Mesh
 {
 public:

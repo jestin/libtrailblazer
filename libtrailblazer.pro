@@ -2,7 +2,8 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= qt
 
-SOURCES +=
+SOURCES += \
+    StlReader.cpp
 
 HEADERS += \
     Point.h \
@@ -11,5 +12,7 @@ HEADERS += \
     Path.h \
     Facet.h \
     Layer.h \
-    Mesh.h
+    Mesh.h \
+    IStlReader.h \
+    StlReader.h
 

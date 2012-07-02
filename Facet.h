@@ -4,6 +4,8 @@
 #include <vector>
 #include "Point.h"
 
+using std::vector;
+
 class Facet
 {
 public:
