@@ -7,8 +7,10 @@ class StlReader : public IStlReader
 {
 public:
     StlReader();
-    Mesh ReadStl(string fileName);
-    Mesh ReadStl(istream file);
+    virtual ~StlReader();
+
+    virtual Mesh ReadStl(string fileName);
+    virtual Mesh ReadStl(istream& file);
 };
 
 #endif // STLREADER_H

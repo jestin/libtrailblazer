@@ -10,8 +10,11 @@ using std::istream;
 
 class IStlReader
 {
+public:
+    virtual ~IStlReader() {}
+
     virtual Mesh ReadStl(string fileName) = 0;
-    virtual Mesh ReadStl(istream file) = 0;
+    virtual Mesh ReadStl(istream& file) = 0;
 };
 
 #endif // ISTLREADER_H

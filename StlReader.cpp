@@ -4,13 +4,17 @@ StlReader::StlReader()
 {
 }
 
-Mesh ReadStl(string fileName)
+StlReader::~StlReader()
+{
+}
+
+Mesh StlReader::ReadStl(string fileName)
 {
     Mesh a;
     return a;
 }
 
-Mesh ReadStl(istream file)
+Mesh StlReader::ReadStl(istream& file)
 {
     Mesh a;
     return a;

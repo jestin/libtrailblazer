@@ -3,7 +3,8 @@ CONFIG += console
 CONFIG -= qt
 
 SOURCES += \
-    StlReader.cpp
+    StlReader.cpp \
+    main.cpp
 
 HEADERS += \
     Point.h \
