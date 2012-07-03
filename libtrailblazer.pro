@@ -1,10 +1,9 @@
-TEMPLATE = app
-CONFIG += console
+TEMPLATE = lib
+CONFIG += dll
 CONFIG -= qt
 
 SOURCES += \
-    StlReader.cpp \
-    main.cpp
+    StlReader.cpp
 
 HEADERS += \
     Point.h \
