@@ -2,8 +2,7 @@ TEMPLATE = lib
 CONFIG += dll
 CONFIG -= qt
 
-SOURCES += \
-    StlReader.cpp
+SOURCES +=
 
 HEADERS += \
     Point.h \
@@ -12,7 +11,5 @@ HEADERS += \
     Path.h \
     Facet.h \
     Layer.h \
-    Mesh.h \
-    IStlReader.h \
-    StlReader.h
+    Mesh.h
 
