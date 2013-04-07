@@ -2,7 +2,9 @@ TEMPLATE = lib
 CONFIG += dll
 CONFIG -= qt
 
-SOURCES +=
+SOURCES += \
+    Slicer.cpp \
+    trailblazer.cpp
 
 HEADERS += \
     Point.h \
@@ -11,5 +13,8 @@ HEADERS += \
     Path.h \
     Facet.h \
     Layer.h \
-    Mesh.h
+    Mesh.h \
+    Slicer.h \
+    ISlicer.h \
+    trailblazer.h
 

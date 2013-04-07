@@ -4,6 +4,8 @@
 #include <vector>
 #include "Line.h"
 
+using namespace std;
+
 typedef vector<Line> Loop;
 class Layer
 {
