@@ -8,7 +8,7 @@ class ISlicer
 {
 public:
     virtual ~ISlicer() {}
-    virtual Layer* Slice(Mesh *mesh, double layerHeight) = 0;
+    virtual Layer* Slice(Mesh &mesh, double layerHeight) = 0;
 };
 
 #endif // ISLICER_H
