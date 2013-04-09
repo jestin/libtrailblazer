@@ -59,9 +59,9 @@ Polyhedron Slicer::ConvertToPolyhedron(Mesh &mesh)
 
         if(f.vertices.size() == 3)
         {
-            Point_3 a(f.vertices[0].x, f.vertices[0].x, f.vertices[0].x);
-            Point_3 b(f.vertices[1].x, f.vertices[1].x, f.vertices[1].x);
-            Point_3 c(f.vertices[2].x, f.vertices[2].x, f.vertices[2].x);
+            Point_3 a(f.vertices[0].x, f.vertices[0].y, f.vertices[0].z);
+            Point_3 b(f.vertices[1].x, f.vertices[1].y, f.vertices[1].z);
+            Point_3 c(f.vertices[2].x, f.vertices[2].y, f.vertices[2].z);
             p.make_triangle(a, b, c);
         }
     }
