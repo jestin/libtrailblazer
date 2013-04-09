@@ -43,7 +43,9 @@ Layer Slicer::Slice(Mesh &mesh, double layerHeight)
         CGAL::Object object = op.first;
         Segment segment;
         if(CGAL::assign(segment,object))
+        {
             segments.push_back(segment);
+        }
     }
 
     return ConvertSegmentsToLayer(segments);
