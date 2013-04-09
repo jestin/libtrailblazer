@@ -12,7 +12,7 @@ public:
     virtual Layer Slice(Mesh &mesh, double layerHeight);
 
 private:
-    Nef_polyhedron ConvertToNefPolyhedron(Mesh $mesh);
+    Polyhedron ConvertToPolyhedron(Mesh &mesh);
 };
 
 #endif // SLICER_H
