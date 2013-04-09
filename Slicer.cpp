@@ -5,7 +5,7 @@ Slicer::Slicer()
 {
 }
 
-Layer* Slicer::Slice(Mesh &mesh, double layerHeight)
+Layer Slicer::Slice(Mesh &mesh, double layerHeight)
 {
-    return NULL;
+    return Layer();
 }

@@ -7,7 +7,7 @@ class Slicer : public ISlicer
 {
 public:
     Slicer();
-    virtual Layer* Slice(Mesh &mesh, double layerHeight);
+    virtual Layer Slice(Mesh &mesh, double layerHeight);
 };
 
 #endif // SLICER_H

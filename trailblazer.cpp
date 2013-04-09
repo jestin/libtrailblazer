@@ -2,13 +2,13 @@
 
 #include "Slicer.h"
 
-Layer* Slice(Mesh &mesh, double layerHeight)
+Layer Slice(Mesh &mesh, double layerHeight)
 {
     ISlicer* pSlicer = new Slicer();
-    Layer* pLayer = pSlicer->Slice(mesh, layerHeight);
+    Layer layer = pSlicer->Slice(mesh, layerHeight);
     delete(pSlicer);
 
-    return pLayer;
+    return layer;
 }
 
 Path* GeneratePath(Layer* layers)
