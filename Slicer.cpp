@@ -1,5 +1,7 @@
 #include "Slicer.h"
+
 #include <cstddef>
+#include "cgaldefs.h"
 
 Slicer::Slicer()
 {
@@ -7,5 +9,6 @@ Slicer::Slicer()
 
 Layer Slicer::Slice(Mesh &mesh, double layerHeight)
 {
-    return Layer();
+    Layer l = Layer();
+    return l;
 }

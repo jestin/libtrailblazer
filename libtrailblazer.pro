@@ -16,5 +16,6 @@ HEADERS += \
     Mesh.h \
     Slicer.h \
     ISlicer.h \
-    trailblazer.h
+    trailblazer.h \
+    cgaldefs.h
 
