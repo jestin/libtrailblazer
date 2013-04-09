@@ -3,11 +3,16 @@
 
 #include "ISlicer.h"
 
+#include"cgaldefs.h"
+
 class Slicer : public ISlicer
 {
 public:
     Slicer();
     virtual Layer Slice(Mesh &mesh, double layerHeight);
+
+private:
+    Nef_polyhedron ConvertToNefPolyhedron(Mesh $mesh);
 };
 
 #endif // SLICER_H
