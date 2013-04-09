@@ -9,11 +9,12 @@ Slicer::Slicer()
 
 Layer Slicer::Slice(Mesh &mesh, double layerHeight)
 {
-    Layer l = Layer();
+    Layer l;
     return l;
 }
 
 Nef_polyhedron Slicer::ConvertToNefPolyhedron(Mesh $mesh)
 {
-    return Nef_polyhedron();
+    Nef_polyhedron p;
+    return p;
 }
