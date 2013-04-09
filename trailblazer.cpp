@@ -4,8 +4,11 @@
 
 Layer* Slice(Mesh &mesh, double layerHeight)
 {
-    ISlicer* slicer = new Slicer();
-    return slicer->Slice(mesh, layerHeight);
+    ISlicer* pSlicer = new Slicer();
+    Layer* pLayer = pSlicer->Slice(mesh, layerHeight);
+    delete(pSlicer);
+
+    return pLayer;
 }
 
 Path* GeneratePath(Layer* layers)
