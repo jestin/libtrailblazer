@@ -13,6 +13,7 @@ public:
 
 private:
     Polyhedron ConvertToPolyhedron(Mesh &mesh);
+    Layer ConvertSegmentsToLayer(std::list<Segment> segments);
 };
 
 #endif // SLICER_H

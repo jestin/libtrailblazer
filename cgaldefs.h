@@ -10,6 +10,7 @@
 typedef CGAL::Gmpz  NT;
 struct Kernel : public CGAL::Extended_homogeneous<NT> {};
 
+typedef Kernel::FT                      FT;
 typedef Kernel::Point_3                 Point_3;
 typedef Kernel::Vector_3                Vector;
 typedef CGAL::Polyhedron_3<Kernel>      Polyhedron;
