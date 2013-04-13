@@ -5,7 +5,8 @@
 #include "Mesh.h"
 #include "Path.h"
 
-extern Layer Slice(Mesh &mesh, double layerHeight);
-extern Path* GeneratePath(Layer* layers);
+extern "C" Layer Slice(Mesh &mesh, double layerHeight);
+extern "C" Path* GeneratePath(Layer* layers);
+extern "C" int Test(double testDouble);
 
 #endif // TRAILBLAZER_H

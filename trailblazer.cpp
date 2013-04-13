@@ -20,3 +20,8 @@ Path* GeneratePath(Layer* layers)
 {
     return 0;
 }
+
+int Test(double testDouble)
+{
+    return (int) (testDouble * 2.0);
+}
