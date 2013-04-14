@@ -3,19 +3,22 @@
 
 #include "Slicer.h"
 
-void Slice(Mesh *mesh, double layerHeight)
+Layer* Slice(Mesh *mesh, double layerHeight)
 {
+    Layer* layer = (Layer *)malloc(sizeof(Layer));
     printf("Made it!\n");
     // construct
-    ISlicer* pSlicer = new Slicer();
+    //ISlicer* pSlicer = new Slicer();
 
     // do stuff
-    Layer layer = pSlicer->Slice(mesh, layerHeight);
+    //Layer layer = pSlicer->Slice(mesh, layerHeight);
 
     // destruct
-    delete(pSlicer);
+    //delete(pSlicer);
 
-    //return layer;
+    printf("Almost out!\n");
+
+    return layer;
 }
 
 Path* GeneratePath(Layer* layers)
