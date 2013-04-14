@@ -1,9 +1,11 @@
 #include "trailblazer.h"
+#include <stdio.h>
 
 #include "Slicer.h"
 
-Layer Slice(Mesh &mesh, double layerHeight)
+void Slice(Mesh *mesh, double layerHeight)
 {
+    printf("Made it!\n");
     // construct
     ISlicer* pSlicer = new Slicer();
 
@@ -13,7 +15,7 @@ Layer Slice(Mesh &mesh, double layerHeight)
     // destruct
     delete(pSlicer);
 
-    return layer;
+    //return layer;
 }
 
 Path* GeneratePath(Layer* layers)

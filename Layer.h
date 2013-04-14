@@ -7,10 +7,9 @@
 using namespace std;
 
 typedef vector<Line> Loop;
-class Layer
+typedef struct tagLayer
 {
-public:
     vector<Loop> loops;
-};
+} Layer;
 
 #endif // LAYER_H

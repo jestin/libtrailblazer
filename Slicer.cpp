@@ -15,7 +15,7 @@ Slicer::Slicer()
 {
 }
 
-Layer Slicer::Slice(Mesh &mesh, double layerHeight)
+Layer Slicer::Slice(Mesh *mesh, double layerHeight)
 {
     typedef CGAL::AABB_polyhedron_triangle_primitive<Kernel,Polyhedron> Primitive;
     typedef CGAL::AABB_traits<Kernel, Primitive> Traits;
@@ -51,11 +51,11 @@ Layer Slicer::Slice(Mesh &mesh, double layerHeight)
     return ConvertSegmentsToLayer(segments);
 }
 
-Polyhedron Slicer::ConvertToPolyhedron(Mesh &mesh)
+Polyhedron Slicer::ConvertToPolyhedron(Mesh *mesh)
 {
     Polyhedron p;
 
-    for (vector<Facet>::iterator it = mesh.facets.begin(); it != mesh.facets.end(); ++it)
+    for (vector<Facet>::iterator it = mesh->facets.begin(); it != mesh->facets.end(); ++it)
     {
         Facet f = *it;
 

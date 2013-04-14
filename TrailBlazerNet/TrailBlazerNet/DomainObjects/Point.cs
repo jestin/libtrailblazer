@@ -1,7 +1,9 @@
 using System;
+using System.Runtime.InteropServices;
 
 namespace TrailBlazerNet.DomainObjects
 {
+	[StructLayout(LayoutKind.Sequential)]
 	public class Point
     {
         public float X { get; set; }

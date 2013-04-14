@@ -9,10 +9,10 @@ class Slicer : public ISlicer
 {
 public:
     Slicer();
-    virtual Layer Slice(Mesh &mesh, double layerHeight);
+    virtual Layer Slice(Mesh *mesh, double layerHeight);
 
 private:
-    Polyhedron ConvertToPolyhedron(Mesh &mesh);
+    Polyhedron ConvertToPolyhedron(Mesh *mesh);
     Layer ConvertSegmentsToLayer(std::list<Segment> segments);
 };
 

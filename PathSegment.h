@@ -3,14 +3,13 @@
 
 #include "Line.h"
 
-class PathSegment
+typedef struct tagPathSegment
 {
-public:
     Line segment;
     int speed;
 
     int extrusionSpeed;
     double extrusionVolume;
-};
+} PathSegment;
 
 #endif // PATHSEGMENT_H

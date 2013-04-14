@@ -11,15 +11,7 @@ namespace Test
 			var result = TrailBlazer.Test(2.5);
 			Console.WriteLine("{0}", result);
 
-			var layer = TrailBlazer.Slice(new Mesh(), 1.0);
-			if(layer == null)
-			{
-				Console.WriteLine("null layer");
-			}
-			else
-			{
-				Console.WriteLine("non-null layer");
-			}
+			TrailBlazer.Slice(new Mesh(), 1.0);
 		}
 	}
 }

@@ -4,10 +4,9 @@
 #include <vector>
 #include "PathSegment.h"
 
-class Path
+typedef struct tagPath
 {
-public:
     vector<PathSegment> segments;
-};
+} Path;
 
 #endif // PATH_H

@@ -7,7 +7,10 @@ namespace TrailBlazerNet
 	public class TrailBlazer
 	{
 		[DllImport("liblibtrailblazer")]
-		public static extern Layer Slice(Mesh mesh, double layerHeight);
+		public static extern void Slice(
+			[MarshalAs(UnmanagedType.LPStruct)]
+			Mesh mesh,
+			double layerHeight);
 
 		[DllImport("liblibtrailblazer")]
 		public static extern Path GeneratePath(Layer[] layers);

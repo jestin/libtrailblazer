@@ -3,12 +3,11 @@
 
 #include "Point.h"
 
-class Line
+typedef struct tagLine
 {
-public:
     Point start;
     Point end;
-};
+} Line;
 
 
 #endif // LINE_H

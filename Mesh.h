@@ -6,10 +6,9 @@
 
 using std::vector;
 
-class Mesh
+typedef struct tagMesh
 {
-public:
     vector<Facet> facets;
-};
+} Mesh;
 
 #endif // MESH_H

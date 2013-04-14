@@ -5,7 +5,7 @@
 #include "Mesh.h"
 #include "Path.h"
 
-extern "C" Layer Slice(Mesh &mesh, double layerHeight);
+extern "C" void Slice(Mesh *mesh, double layerHeight);
 extern "C" Path* GeneratePath(Layer* layers);
 extern "C" int Test(double testDouble);
 

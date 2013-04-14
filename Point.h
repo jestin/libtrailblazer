@@ -1,13 +1,11 @@
 #ifndef POINT_H
 #define POINT_H
 
-class Point
+typedef struct tagPoint
 {
-public:
     double x;
     double y;
     double z;
-};
-
+} Point;
 
 #endif // POINT_H

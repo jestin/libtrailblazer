@@ -6,11 +6,10 @@
 
 using std::vector;
 
-class Facet
+typedef struct tagFacet
 {
-public:
     Point normal;
     vector<Point> vertices;
-};
+} Facet;
 
 #endif // FACET_H
