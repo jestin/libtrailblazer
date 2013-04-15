@@ -1,7 +1,6 @@
 #ifndef FACET_H
 #define FACET_H
 
-#include <vector>
 #include "Point.h"
 
 using std::vector;
@@ -9,7 +8,8 @@ using std::vector;
 typedef struct tagFacet
 {
     Point normal;
-    vector<Point> vertices;
+    Point** vertices;
+    long numVertices;
 } Facet;
 
 #endif // FACET_H
